@@ -7,6 +7,7 @@ class Citizen extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('registration');
+		$this->load->model('pfmsd');
 		// echo '<script>alert("yahi");</script>';
 	}
 	public function registration()
@@ -44,7 +45,7 @@ class Citizen extends CI_Controller
 				$array = array(
 					'success' => true,
 				);
-			}else{
+			} else {
 				$session_data = array(
 					'isslogin' => false,
 					'username' => 'email'
@@ -53,7 +54,6 @@ class Citizen extends CI_Controller
 				$array = array(
 					'success' => false,
 				);
-
 			}
 		} else {
 			$array = array(
@@ -119,8 +119,9 @@ class Citizen extends CI_Controller
 	}
 	public function home()
 	{
-		if ($this->session->userdata('isslogin')) {
-			$this->load->view('citizen/index');
+		if ($this->session->userdata('isslogin')) {		
+			$data['awash'] = $this->pfmsd->pfmsdawash();
+			$this->load->view('citizen/index', $data);
 		} else {
 			redirect(base_url());
 		}

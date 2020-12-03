@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
 .logsed {
 	/* box-shadow: 7px 7px 20px 7px rgb(54 58 72 / 47%); */
 }
-#citizenpicdemo{
+#citizenpicdemo {
 	max-height: 15rem;
+}
+.sidebar-nav {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.nav-tabs .nav-link {
+	color: rgb(255, 255, 255);
+	font-size: 1.5rem;
+	font-weight: 500;
+	background-color: rgb(0, 0, 0);
 }
