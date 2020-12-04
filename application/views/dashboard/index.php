@@ -7,7 +7,7 @@ if (!$this->session->userdata('isslogin')) {
 ?>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2 col-sm-2 colmd1">
+            <div class="col-md-1 col-sm-1 colmd1">
                 <?php $this->load->view('./dashboard/sidebar.php'); ?>
             </div>
             <div class="col-md-10 col-sm-10"></div>

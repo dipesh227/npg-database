@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-sm d-flex justify-content-between bg-white">
-    <a class="navbar-brand text-uppercase" href="<?php echo base_url() ?>">
+    <a class="navbar-brand text-uppercase dbod" href="<?php echo base_url() ?>">
         <img style="max-height: 4rem;" src="<?php echo base_url(); ?>asset/img/Nagar_Panchayat_Gularbhoj_Office_management_system.gif" alt="Nagar_Panchayat_Gularbhoj_Office_management_system">
     </a>
     <img style="max-height: 4rem;" class="" src="<?php echo base_url(); ?>asset/img/flag_india.gif" alt="Nagar_Panchayat_Gularbhoj_Office_management_system">

@@ -12,61 +12,15 @@ body {
 #citizenpicdemo {
 	max-height: 15rem;
 }
-.sidebar-nav {
-	padding-right: 0px;
-	padding-left: 0px;
-}
-.nav-tabs .nav-link {
-	color: rgb(255, 255, 255);
-	font-size: 1.5rem;
-	font-weight: 500;
-	background-color: rgb(0, 0, 0);
-}
-.text-black a {
-	color: #24476f;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	padding-left: 0px;
-	padding-right: 10px;
-	text-decoration: none;
-}
-.text-black ul {
-	border: solid 1px black;
-	display: block;
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-	width: 198px;
-	border: solid 1px black;
-	display: block;
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-	width: 198px;
-}
-.text-black li {
-	background-image: url(img/arrowgreen.gif);
-	display: block;
-	height: 32px;
-	line-height: 32px;
-	margin: 0px;
-	min-height: 32px;
-	padding: 0px;
-	position: relative;
-	z-index: 1;
-	vertical-align: middle;
-	background-image: url(img/arrowgreen.gif);
-	display: block;
-	height: 32px;
-	line-height: 32px;
-	margin: 0px;
-	min-height: 32px;
-	padding: 0px;
-	position: relative;
-	z-index: 1;
-	vertical-align: middle;
-}
 .colmd1{
 	padding-left: 0;
+}
+.btn-group-vertical a{
+	border-style: double;
+}
+.btn-group-vertical a:hover{
+	background-color: rgba(66, 87, 46, 0.438);
+}
+.dbod{
+	border-style: double;
 }
