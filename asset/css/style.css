@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 * {
-	background-color: rgb(0, 0, 0);
-	color: rgb(255, 255, 255);
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
-body{
-	background-color: rgb(0, 0, 0);
-	color: rgb(255, 255, 255);
+body {
+	background-color: #e5e9d5;
 }
+
 .logsed {
 	/* box-shadow: 7px 7px 20px 7px rgb(54 58 72 / 47%); */
 }
@@ -23,4 +21,52 @@ body{
 	font-size: 1.5rem;
 	font-weight: 500;
 	background-color: rgb(0, 0, 0);
+}
+.text-black a {
+	color: #24476f;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 0px;
+	padding-right: 10px;
+	text-decoration: none;
+}
+.text-black ul {
+	border: solid 1px black;
+	display: block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 198px;
+	border: solid 1px black;
+	display: block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 198px;
+}
+.text-black li {
+	background-image: url(img/arrowgreen.gif);
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	margin: 0px;
+	min-height: 32px;
+	padding: 0px;
+	position: relative;
+	z-index: 1;
+	vertical-align: middle;
+	background-image: url(img/arrowgreen.gif);
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	margin: 0px;
+	min-height: 32px;
+	padding: 0px;
+	position: relative;
+	z-index: 1;
+	vertical-align: middle;
+}
+.colmd1{
+	padding-left: 0;
 }
