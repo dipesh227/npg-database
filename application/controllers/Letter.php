@@ -14,7 +14,10 @@ class Letter extends CI_Controller
     }
     public function lockrone()
     {
-        $data['lockr_no'] = $this->latterbox->lockerone1();
-        $this->load->view('dashboard/latter/lockrone',$data);
+        $data['patraawali_detials'] = $this->latterbox->patraawali_detials();
+        $data['locker_no'] = $this->latterbox->locker_no();
+        $data['section'] = $this->latterbox->section();
+        $data['subsection'] = $this->latterbox->subsection();
+        $this->load->view('dashboard/latter/lockrone', $data);
     }
 }
