@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -75,11 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'npdatabase',
+	'hostname' => 'bpbfivofm6bbhxja5r6l-mysql.services.clever-cloud.com',
+	'username' => 'uplfsp01aheb3zmd',
+	'password' => 'zDVa96Dv3gHbWAYlR9Ba',
+	'database' => 'bpbfivofm6bbhxja5r6l',
 	'dbdriver' => 'mysqli',
+	'port' => 3306,
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
