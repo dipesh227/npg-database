@@ -75,12 +75,12 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'bpbfivofm6bbhxja5r6l-mysql.services.clever-cloud.com',
-	'username' => 'uplfsp01aheb3zmd',
-	'password' => 'zDVa96Dv3gHbWAYlR9Ba',
-	'database' => 'bpbfivofm6bbhxja5r6l',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'npdatabase',
 	'dbdriver' => 'mysqli',
-	'port' => 3306,
+	'port' => 3307,
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
@@ -95,3 +95,25 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+// $db['default'] = array(
+// 	'dsn'	=> '',
+// 	'hostname' => 'bpbfivofm6bbhxja5r6l-mysql.services.clever-cloud.com',
+// 	'username' => 'uplfsp01aheb3zmd',
+// 	'password' => 'zDVa96Dv3gHbWAYlR9Ba',
+// 	'database' => 'bpbfivofm6bbhxja5r6l',
+// 	'dbdriver' => 'mysqli',
+// 	'port' => 3306,
+// 	'dbprefix' => '',
+// 	'pconnect' => FALSE,
+// 	'db_debug' => (ENVIRONMENT !== 'production'),
+// 	'cache_on' => FALSE,
+// 	'cachedir' => '',
+// 	'char_set' => 'utf8',
+// 	'dbcollat' => 'utf8_general_ci',
+// 	'swap_pre' => '',
+// 	'encrypt' => FALSE,
+// 	'compress' => FALSE,
+// 	'stricton' => FALSE,
+// 	'failover' => array(),
+// 	'save_queries' => TRUE
+// );

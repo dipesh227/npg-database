@@ -43,7 +43,7 @@ if ($this->session->userdata('isslogin')) {
         $("#clogin").submit(function() {
             $.ajax({
                 type: "post",
-                url: "<?php echo base_url() ?>login/check_login_data",
+                url: "<?php echo base_url() ?>admin/check_login_data",
                 // enctype: 'multipart/form-data',
                 processData: false, // tell jQuery not to process the data
                 contentType: false, // tell jQuery not to set contentType,
