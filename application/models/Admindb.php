@@ -22,7 +22,8 @@ class Admindb extends CI_Model
         }
     }
 
-    function sliderimgget(){
+    function sliderimgget()
+    {
         $this->db->order_by('id', 'ASC');
         $sliderpic = $this->db->get('sliderpic');
         return $sliderpic->result();
@@ -30,10 +31,35 @@ class Admindb extends CI_Model
     function sliderimginsert($data)
     {
         $respunse = $this->db->insert('sliderpic', $data);
-        if ($respunse) {
-            $this->db->order_by('id', 'ASC');
-            $sliderpic = $this->db->get('sliderpic');
-            return $sliderpic->result();
+        return  $respunse;
+    }
+    function galleryimginserts($data)
+    {
+        $respunse = $this->db->insert('get_entriesgalleryimg', $data);
+        return  $respunse;
+    }
+    public function get_entries()
+    {
+        $query = $this->db->get('sliderpic');
+        // if (count( $query->result() ) > 0) {
+        return $query->result();
+        // }
+    }
+    public function get_entriesgalleryimg()
+    {
+        $query = $this->db->get('get_entriesgalleryimg');
+        // if (count( $query->result() ) > 0) {
+        return $query->result();
+        // }
+    }
+    public function edit_entry($id)
+    {
+        $this->db->select("*");
+        $this->db->from("sliderpic");
+        $this->db->where("id", $id);
+        $query = $this->db->get();
+        if (count($query->result()) > 0) {
+            return $query->row();
         }
     }
 }

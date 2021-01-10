@@ -6,6 +6,8 @@ class Admin extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('form_validation');
 		$this->load->model('Admindb');
 	}
 	public function index()
@@ -57,8 +59,7 @@ class Admin extends CI_Controller
 	}
 	public function slider()
 	{
-		$data['sliderpic'] = $this->Admindb->sliderimgget();
-		$this->load->view('back_end/slider', $data);
+		$this->load->view('back_end/slider');
 	}
 	public function category()
 	{
@@ -82,9 +83,130 @@ class Admin extends CI_Controller
 	}
 	public function slideriminsert()
 	{
-		$sliderpic = addslashes((file_get_contents($_FILES['sliderpic']['tmp_name'])));
-		$data = array('sliderpic' => $sliderpic,);
-		$data['sliderpic'] = $this->Admindb->sliderimginsert($data);
-		return ($this->load->view('back_end/slider', $data));
+		if ($this->input->is_ajax_request()) {
+			$name = $_FILES['sliderpic1']['name'];
+			$sliderpic = base64_encode(file_get_contents($_FILES['sliderpic1']['tmp_name']));
+			$data = array('sliderpic' => $sliderpic, 'name' => $name);
+			if ($this->Admindb->sliderimginsert($data)) {
+				$data = array(
+					'responce' => 'success',
+					'message' => 'Record added Successfully'
+				);
+			} else {
+				$data = array(
+					'responce' => 'error',
+					'message' => 'Failed to add record'
+				);
+			}
+			echo json_encode($data);
+		} else {
+			echo "No direct script access allowed";
+		}
+	}
+	public function fetchme()
+	{
+		// if ($this->input->is_ajax_request()) {
+		// if ($posts = $this->Admindb->get_entries()) {
+		// 	$data = array('responce' => 'success', 'posts' => $posts);
+		// }else{
+		// 	$data = array('responce' => 'error', 'message' => 'Failed to fetch data');
+		// }
+		$posts = $this->Admindb->get_entries();
+		$data = array('responce' => 'success', 'posts' => $posts);
+		echo json_encode($data);
+		// } else {
+		// 	echo "No direct script access allowed";
+		// }
+	}
+	public function edit()
+	{
+		if ($this->input->is_ajax_request()) {
+			$edit_id = $this->input->post('edit_id');
+
+			if ($post = $this->Admindb->edit_entry($edit_id)) {
+				$data = array('responce' => 'success', 'post' => $post);
+			} else {
+				$data = array('responce' => 'error', 'message' => 'failed to fetch record');
+			}
+			echo json_encode($data);
+		} else {
+			echo "No direct script access allowed";
+		}
+	}
+
+	public function update()
+	{
+		if ($this->input->is_ajax_request()) {
+			$this->form_validation->set_rules('edit_name', 'Name', 'required');
+
+			if ($this->form_validation->run() == FALSE) {
+				$data = array('responce' => 'error', 'message' => validation_errors());
+			} else {
+				$data['id'] = $this->input->post('edit_record_id');
+				$data['name'] = $this->input->post('edit_name');
+				if ($this->Admindb->update_entry($data)) {
+					$data = array('responce' => 'success', 'message' => 'Record update Successfully');
+				} else {
+					$data = array('responce' => 'error', 'message' => 'Failed to update record');
+				}
+			}
+
+			echo json_encode($data);
+		} else {
+			echo "No direct script access allowed";
+		}
+	}
+	public function delete()
+	{
+		if ($this->input->is_ajax_request()) {
+			$del_id = $this->input->post('del_id');
+
+			if ($this->Admindb->delete_entry($del_id)) {
+				$data = array('responce' => 'success');
+			} else {
+				$data = array('responce' => 'error');
+			}
+
+			echo json_encode($data);
+		} else {
+			echo "No direct script access allowed";
+		}
+	}
+	public function galleryimginsert()
+	{
+		if ($this->input->is_ajax_request()) {
+			$name = $_FILES['gallerypic']['name'];
+			$sliderpic = base64_encode(file_get_contents($_FILES['gallerypic']['tmp_name']));
+			$data = array('pic' => $sliderpic, 'name' => $name);
+			if ($this->Admindb->galleryimginserts($data)) {
+				$data = array(
+					'responce' => 'success',
+					'message' => 'Record added Successfully'
+				);
+			} else {
+				$data = array(
+					'responce' => 'error',
+					'message' => 'Failed to add record'
+				);
+			}
+			echo json_encode($data);
+		} else {
+			echo "No direct script access allowed";
+		}
+	}
+	public function fetchgalleryimg()
+	{
+		if ($this->input->is_ajax_request()) {
+			if ($posts = $this->Admindb->get_entriesgalleryimg()) {
+				$data = array('responce' => 'success', 'posts' => $posts);
+			} else {
+				$data = array('responce' => 'error', 'message' => 'Failed to fetch data');
+			}
+			// $posts = $this->Admindb->get_entriesgalleryimg();
+			// $data = array('responce' => 'success', 'posts' => $posts);
+			echo json_encode($data);
+		} else {
+			echo "No direct script access allowed";
+		}
 	}
 }
