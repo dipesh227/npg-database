@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <script src="<?php echo base_url() ?>asset/assets/vendor/jquery/jquery.min.js"></script>
-
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Nagar Panchayat Gularbhoj</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="<?php echo base_url() ?>asset/img/flag_india.gif" rel="icon">
-  <link href="<?php echo base_url() ?>asset/img/flag_india.gif" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="<?php echo base_url() ?>asset/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>asset/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>asset/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>asset/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>asset/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>asset/assets/vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>asset/assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>asset/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="<?php echo base_url() ?>asset/assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!--  Main CSS File -->
-  <link href="<?php echo base_url() ?>asset/assets/css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/assets/css/font.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/assets/css/li-scroller.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/assets/css/jquery.fancybox.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/assets/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/assets/css/style.css">
+  <!--[if lt IE 9]>
+<script src="<?php echo base_url() ?>asset/assets/js/html5shiv.min.js"></script>
+<script src="<?php echo base_url() ?>asset/assets/js/respond.min.js"></script>
+<![endif]-->
 </head>
 
-<body style=" overflow-x: hidden;">
+<body>
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <div class="container">
