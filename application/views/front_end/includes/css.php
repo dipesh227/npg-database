@@ -21,9 +21,9 @@
 <![endif]-->
 </head>
 
-<body>
+<body >
   <div id="preloader">
     <div id="status">&nbsp;</div>
   </div>
   <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-  <div class="container">
+  <div class="container" style="overflow-x: hidden;">

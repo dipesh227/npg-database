@@ -15,20 +15,21 @@
               var d = new Date();
               var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
               var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-              document.getElementById("demo").innerHTML = d.getDate() + ' / ' + months[d.getMonth()] + ' / ' + d.getFullYear() + ' : ' + days[d.getDay()];
+              document.getElementById("demo").innerHTML = d.getDate() + ' - ' + months[d.getMonth()] + ' - ' + d.getFullYear() + ' : ' + days[d.getDay()];
             </script>
           </p>
         </div>
       </div>
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12">
-      <div class="header_bottom">
-        <div class="logo_area"><a href="<?php echo base_url() ?>" class="logo">
+      <div class="header_bottom d-flex justify-content-around">
+        <!-- <div class="logo_area"><a href="<?php echo base_url() ?>" class="logo">
             <h3 class=" text-primary">Nagar <strong class=" text-warning">Panchayat</strong> Gularbhoj</h3>
-          </a></div>
-        <!-- <div class="logo_area"><a href="<?php echo base_url() ?>" class="logo"><img src="<?php echo base_url() ?>asset/images/logo.jpg" alt=""></a></div> -->
-        <!-- <div class="add_banner"><a href="#"><img src="<?php echo base_url() ?>asset/images/addbanner_728x90_V1.jpg" alt=""></a></div> -->
+          </a>
+        </div> -->
+        <div class="logo_area "><a href="<?php echo base_url() ?>" class="logo"><img src="<?php echo base_url() ?>asset/नगर पंचायत गूलरभोज.png" alt=""></a></div>
       </div>
+        <!-- <div class="add_banner"><a href="#"><img src="<?php echo base_url() ?>asset/images/addbanner_728x90_V1.jpg" alt=""></a></div> -->
     </div>
   </div>
 </header>

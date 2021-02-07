@@ -5,7 +5,7 @@
                 <div class="fashion_technology_area">
                     <div class="fashion">
                         <div class="single_post_content">
-                            <h2><span>Fashion</span></h2>
+                            <h2><span>Post By ULB</span></h2>
                             <ul class="business_catgnav wow fadeInDown">
                                 <?php
                                 foreach ($slider as $sliderfetch) {
@@ -24,7 +24,7 @@
                     </div>
                     <div class="technology">
                         <div class="single_post_content">
-                            <h2><span>Technology</span></h2>
+                            <h2><span>Tenders</span></h2>
                             <ul class="business_catgnav">
                                 <?php
                                 foreach ($slider as $sliderfetch) {
