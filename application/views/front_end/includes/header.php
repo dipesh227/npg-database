@@ -4,17 +4,17 @@
       <div class="header_top">
         <div class="header_top_left">
           <ul class="top_nav">
-            <li><a href="<?php echo base_url() ?>">Home</a></li>
-            <li><a href="<?php echo base_url() ?>about">About</a></li>
-            <li><a href="<?php echo base_url() ?>contact">Contact</a></li>
+            <li><a href="<?php echo base_url() ?>">होम </a></li>
+            <li><a href="<?php echo base_url() ?>about">हमारे बारे मे </a></li>
+            <li><a href="<?php echo base_url() ?>contact">हमसे संपर्क करें </a></li>
           </ul>
         </div>
         <div class="header_top_right">
           <p id="demo">
             <script>
               var d = new Date();
-              var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-              var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+              var months = ["जनवरी ", "फरवरी ", "मार्च ", "अप्रेल ", "मई ", "जून ", "जुलाई ", "अगस्त ", "सितम्बर ", "ऑक्टोबर ", "नवंबर ", "दिसंबर "];
+              var days = ["रविवार ", "सोमवार ", "मंगलवार ", "बुधवार ", "ब्रहस्पतिवार ", "शुक्रवार ", "शनिवार "];
               document.getElementById("demo").innerHTML = d.getDate() + ' - ' + months[d.getMonth()] + ' - ' + d.getFullYear() + ' : ' + days[d.getDay()];
             </script>
           </p>

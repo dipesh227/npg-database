@@ -48,9 +48,9 @@ class Admindb extends CI_Model
     public function get_entriesgalleryimg()
     {
         $query = $this->db->get('get_entriesgalleryimg');
-        // if (count( $query->result() ) > 0) {
+        if (count( $query->result() ) > 0) {
         return $query->result();
-        // }
+        }
     }
     public function edit_entry($id)
     {

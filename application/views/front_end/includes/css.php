@@ -19,9 +19,20 @@
 <script src="<?php echo base_url() ?>asset/assets/js/html5shiv.min.js"></script>
 <script src="<?php echo base_url() ?>asset/assets/js/respond.min.js"></script>
 <![endif]-->
+  <!-- <style>
+    @font-face {
+      font-family: 'Kruti Dev';
+      src: url('<?php echo base_url() ?>asset/krdv011.ttf') format('truetype')
+    }
+
+    * {
+      font-family: Kruti Dev !important;
+      /* font-size: 18px !important; */
+    }
+  </style> -->
 </head>
 
-<body >
+<body>
   <div id="preloader">
     <div id="status">&nbsp;</div>
   </div>
