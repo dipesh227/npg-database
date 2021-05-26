@@ -30,6 +30,11 @@
       /* font-size: 18px !important; */
     }
   </style> -->
+  <style>
+    * {
+      font-size: 2rem;
+    }
+  </style>
 </head>
 
 <body>

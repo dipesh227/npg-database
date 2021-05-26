@@ -29,7 +29,7 @@
         </div> -->
         <div class="logo_area "><a href="<?php echo base_url() ?>" class="logo"><img src="<?php echo base_url() ?>asset/नगर पंचायत गूलरभोज.png" alt=""></a></div>
       </div>
-        <!-- <div class="add_banner"><a href="#"><img src="<?php echo base_url() ?>asset/images/addbanner_728x90_V1.jpg" alt=""></a></div> -->
+      <!-- <div class="add_banner"><a href="#"><img src="<?php echo base_url() ?>asset/images/addbanner_728x90_V1.jpg" alt=""></a></div> -->
     </div>
   </div>
 </header>
@@ -44,29 +44,36 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav main_nav">
-        <li class="active"><a href="<?php echo base_url() ?>"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
-        <li><a href="<?php echo base_url() ?>tender">Tenders</a></li>
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Government Scheam</a>
+        <li class="active"><a href="<?php echo base_url() ?>"><span class="fa fa-home desktop-home"></span><span class="mobile-show">होम</span></a></li>
+        <li><a href="<?php echo base_url() ?>tender">निविदा</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">सरकारी योजनाए</a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="<?php echo base_url() ?>pmay">Pradhan mantri Aawash Yojana</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">प्रधानमंत्री आवास योजना</a></li>
           </ul>
         </li>
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ward Detials</a>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">वार्ड</a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="<?php echo base_url() ?>pmay">Ward 01</a></li>
-            <li><a href="<?php echo base_url() ?>pmay">Ward 02</a></li>
-            <li><a href="<?php echo base_url() ?>pmay">Ward 03</a></li>
-            <li><a href="<?php echo base_url() ?>pmay">Ward 04</a></li>
-            <li><a href="<?php echo base_url() ?>pmay">Ward 05</a></li>
-            <li><a href="<?php echo base_url() ?>pmay">Ward 06</a></li>
-            <li><a href="<?php echo base_url() ?>pmay">Ward 07</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">वार्ड 01</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">वार्ड 02</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">वार्ड 03</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">वार्ड 04</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">वार्ड 05</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">वार्ड 06</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">वार्ड 07</a></li>
           </ul>
         </li>
-        <li><a href="<?php echo base_url() ?>">Chairman Cornar</a></li>
-        <li><a href="<?php echo base_url() ?>">Exicutive Officer Cornar</a></li>
-        <li><a href="<?php echo base_url() ?>contact">Citizen Cornar</a></li>
+        <li><a href="<?php echo base_url() ?>">चेयरमेन कॉर्नर </a></li>
+        <li><a href="<?php echo base_url() ?>">अधिशासी अधिकारी</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">नागरिको के लिए</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="<?php echo base_url() ?>pmay">जन्म प्रमाण पत्र</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">मृत्यु प्रमाण पत्र</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">परिवार रजिस्टर नकल</a></li>
+            <li><a href="<?php echo base_url() ?>pmay">सिवरेज टैंक</a></li>
+          </ul>
+        </li>
         <li><a href="<?php echo base_url() ?>contact">Site Map</a></li>
-        <li><a href="<?php echo base_url() ?>contact">Stories</a></li>
+
       </ul>
     </div>
   </nav>

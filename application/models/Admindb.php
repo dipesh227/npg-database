@@ -33,6 +33,11 @@ class Admindb extends CI_Model
         $respunse = $this->db->insert('sliderpic', $data);
         return  $respunse;
     }
+    function tenderimginsert($data)
+    {
+        $respunse = $this->db->insert('tender', $data);
+        return  $respunse;
+    }
     function galleryimginserts($data)
     {
         $respunse = $this->db->insert('get_entriesgalleryimg', $data);
@@ -41,6 +46,13 @@ class Admindb extends CI_Model
     public function get_entries()
     {
         $query = $this->db->get('sliderpic');
+        // if (count( $query->result() ) > 0) {
+        return $query->result();
+        // }
+    }
+    public function get_tender()
+    {
+        $query = $this->db->get('tender');
         // if (count( $query->result() ) > 0) {
         return $query->result();
         // }

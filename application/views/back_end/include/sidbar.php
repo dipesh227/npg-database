@@ -41,6 +41,14 @@
                     </a>
                 </li>
                 <li class="nav-item ">
+                    <a href="<?php echo base_url() ?>admin/tender" class="nav-link">
+                        <ii class="nav-icon far fa-file-pdf" aria-hidden="true"></ii>
+                        <p>
+                            Tender
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item ">
                     <a href="<?php echo base_url() ?>admin/slider" class="nav-link">
                         <i class="nav-icon fas fa-chart-pie"></i>
                         <p>

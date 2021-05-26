@@ -12,15 +12,15 @@ body {
 #citizenpicdemo {
 	max-height: 15rem;
 }
-.colmd1{
+.colmd1 {
 	padding-left: 0;
 }
-.btn-group-vertical a{
+.btn-group-vertical a {
 	border-style: double;
 }
-.btn-group-vertical a:hover{
+.btn-group-vertical a:hover {
 	background-color: rgba(66, 87, 46, 0.438);
 }
-.dbod{
+.dbod {
 	border-style: double;
 }

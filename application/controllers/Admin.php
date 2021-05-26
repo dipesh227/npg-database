@@ -57,6 +57,10 @@ class Admin extends CI_Controller
 	{
 		$this->load->view('back_end/complains');
 	}
+	public function tender()
+	{
+		$this->load->view('back_end/tender');
+	}
 	public function slider()
 	{
 		$this->load->view('back_end/slider');
@@ -102,6 +106,44 @@ class Admin extends CI_Controller
 		} else {
 			echo "No direct script access allowed";
 		}
+	}
+	public function tenderiminsert()
+	{
+		
+		if ($this->input->is_ajax_request()) {
+			$name = $_FILES['tenderpic1']['name'];
+			$tenderpic = base64_encode(file_get_contents($_FILES['tenderpic1']['tmp_name']));
+			$data = array('file' => $tenderpic, 'tender_name' => $name, 'date'=> date("l, j-F-Y"));
+			if ($this->Admindb->tenderimginsert($data)) {
+				$data = array(
+					'responce' => 'success',
+					'message' => 'Record added Successfully'
+				);
+			} else {
+				$data = array(
+					'responce' => 'error',
+					'message' => 'Failed to add record'
+				);
+			}
+			echo json_encode($data);
+		} else {
+			echo "No direct script access allowed";
+		}
+	}
+	public function tenderfetch()
+	{
+		// if ($this->input->is_ajax_request()) {
+		// if ($posts = $this->Admindb->get_entries()) {
+		// 	$data = array('responce' => 'success', 'posts' => $posts);
+		// }else{
+		// 	$data = array('responce' => 'error', 'message' => 'Failed to fetch data');
+		// }
+		$posts = $this->Admindb->get_tender();
+		$data = array('responce' => 'success', 'posts' => $posts);
+		echo json_encode($data);
+		// } else {
+		// 	echo "No direct script access allowed";
+		// }
 	}
 	public function fetchme()
 	{
